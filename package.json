@@ -1,0 +1,43 @@
+{
+  "name": "Github-Battle",
+  "productName": "Github-Battle",
+  "description": "A app for bettle between github profile",
+  "main": "main.js",
+  "author": {
+    "email": "patelurvil38@gmail.com",
+    "name": "Urvil Patel",
+    "url": "https://github.com/urvil38"
+  },
+  "license": "MIT",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "material-ui": "^0.18.6",
+    "prop-types": "^15.5.10",
+    "query-string": "^4.3.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.1",
+    "react-swipeable-views": "^0.12.3",
+    "react-tap-event-plugin": "^2.0.1"
+  },
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "electron-installer-debian": "^0.5.2",
+    "electron-packager": "^8.7.2",
+    "react-scripts": "1.0.10"
+  },
+  "homepage": "./",
+  "scripts": {
+    "react-start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "debian-installer" : "electron-installer-debian --src release-builds/Github-Battle-linux-x64/ --dest release-builds/installers/ --arch amd64",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=build/github.png --prune=true --out=release-builds",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=build/github.icns --prune=true --out=release-builds-mac",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=build/github.ico --prune=true --out=release-builds-win --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Github Battle\""
+  }
+}

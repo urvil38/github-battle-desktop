@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lang-list{
+  background-color: #dcdcdc;
+}
+
+a {
+  text-decoration: none;
+  color : #2d88be;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.spacelistitems li{
+  margin-bottom: 8px;
+}
+
+.spacelistitems li a{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.battle-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-text{
+  color : #6a1b9a;
+}
+
+.home-text-h1{
+  font-size: 50px;
+  margin-top: 60px;
+  border: 2px solid #6a1b9a;
+  padding: 20px;
+}
+
+.result-text-h1{
+  font-size: 25px;
+  margin-top: 3%;
+  border: 2px solid #6a1b9a;
+  padding: 15px;
+  background: #6a1b9a;
+  color : #FFF;
+  text-transform: uppercase;
+}
+
+.home-text-h2{
+  text-transform: uppercase;
+  border: 2px solid #6a1b9a;
+  padding: 20px;
+}
+
+.result-text-h2{
+  text-transform: uppercase;
+  border: 2px solid #6a1b9a;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #6a1b9a;
+  color : #FFF;
+}
+
+.anchor{
+  display: block;
+  height: 50px;
+}
+
+.button{
+  margin:30px;
+  padding:30px;
+  background: #6a1b9a;
+  width: 200px;
+  border: 2px solid #6a1b9a;
+  color: white;
+  font-size: 25px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 8px 8px 4px #888888;
+  transition: 0.2s ease-in-out;
+}
+
+.button:hover{
+  box-shadow: 3px 3px 2px #888888;
+}
+
+.row{
+  display: flex;
+  justify-content: space-around;
+  margin-top:80px;
+  height: 80vh;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.column-battle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.button-battle{
+  margin-top: 200px;
+}
+
+.result-button{
+  margin: 0;
+}
+
+
+label{
+  margin-bottom: 20px;
+}
+
+.vs{
+  margin-top:150px;
+}
+
+.vsh1{
+  color:white;
+  border: 2px solid purple;
+  padding: 10px;
+  background: #6a1b9a;
+  box-shadow: 0px 1px 6px 2px #888888;
+}
+
+.error{
+  color : #D50000;
+  border: 2px solid #D50000;
+  text-transform: uppercase;
+  text-align: center;
+  padding:10px;
+}
+
+.div-error{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.anchor{
+  overflow-x: auto;
+  overflow-y: auto;
+}
